@@ -1,0 +1,30 @@
+<?php
+/** @var $block Yireo\ExampleJsComponent3\Block\Example */
+?>
+    <div style="border: 1px solid #00A5E3; background-color: #efefef; padding: 10px;">
+        <div id="example3-output" data-bind="scope: 'example3'">
+            <div data-bind="text: message">This should be replaced with some example</div>
+        </div>
+    </div>
+
+    <script type="text/x-magento-init">
+    {
+    "#example3-output": {
+        "Magento_Ui/js/core/app": {
+            "components": {
+                "example3": {
+                    "component": "example3",
+                    "message":"<?php echo $block->getMessage(); ?>"
+                }
+            }
+        }
+    }
+}
+
+    </script>
+
+<?php
+/*
+ *          <div data-bind="text: console.log(example3)">foobar</div>
+            <pre data-bind="text: ko.toJSON($data, null, 2)"></pre>
+*/
