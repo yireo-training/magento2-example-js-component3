@@ -6,7 +6,7 @@ can load their configuration.
 ## Installation
 To install use the following composer command:
 
-    composer require yireo/test-js-component3:dev-master
+    composer require yireo/example-js-component3:dev-master
 
 Next enable the module:
 
